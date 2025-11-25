@@ -13,7 +13,7 @@ class Product extends Model
         'image',
         'description',
     ];
-    public function orders()
+    public function order()
     {
         return $this->belongsToMany(Order::class);
     }
